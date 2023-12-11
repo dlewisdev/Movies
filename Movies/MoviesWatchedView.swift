@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct MoviesWatchedView: View {
+    var dataService = DataService()
+    @State var movies: [Movie] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(movies) { movie in
+                VStack {
+                  ListRow(movie: movie)
+                }
+            }
+            .navigationTitle("Watched")
+            .onAppear {
+                movies = dataService.getWatched()
+            }
+        }
     }
 }
 

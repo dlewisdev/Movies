@@ -11,6 +11,12 @@
 		713A133B2B27A24900955E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A133A2B27A24900955E6E /* ContentView.swift */; };
 		713A133D2B27A24900955E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713A133C2B27A24900955E6E /* Assets.xcassets */; };
 		713A13402B27A24900955E6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713A133F2B27A24900955E6E /* Preview Assets.xcassets */; };
+		713A13472B27A2AD00955E6E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A13462B27A2AD00955E6E /* CustomButton.swift */; };
+		713A13492B27A41800955E6E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A13482B27A41800955E6E /* DataService.swift */; };
+		713A134B2B27A42000955E6E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A134A2B27A42000955E6E /* Movie.swift */; };
+		713A134D2B27A74100955E6E /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A134C2B27A74100955E6E /* ListRow.swift */; };
+		713A134F2B27A96700955E6E /* MoviesWatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A134E2B27A96700955E6E /* MoviesWatchedView.swift */; };
+		713A13512B27AA7F00955E6E /* MoviesToWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A13502B27AA7F00955E6E /* MoviesToWatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		713A133A2B27A24900955E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		713A133C2B27A24900955E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		713A133F2B27A24900955E6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		713A13462B27A2AD00955E6E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		713A13482B27A41800955E6E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		713A134A2B27A42000955E6E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		713A134C2B27A74100955E6E /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		713A134E2B27A96700955E6E /* MoviesWatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWatchedView.swift; sourceTree = "<group>"; };
+		713A13502B27AA7F00955E6E /* MoviesToWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesToWatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				713A13382B27A24900955E6E /* MoviesApp.swift */,
 				713A133A2B27A24900955E6E /* ContentView.swift */,
+				713A134A2B27A42000955E6E /* Movie.swift */,
+				713A13482B27A41800955E6E /* DataService.swift */,
+				713A13462B27A2AD00955E6E /* CustomButton.swift */,
+				713A134C2B27A74100955E6E /* ListRow.swift */,
+				713A134E2B27A96700955E6E /* MoviesWatchedView.swift */,
+				713A13502B27AA7F00955E6E /* MoviesToWatchView.swift */,
 				713A133C2B27A24900955E6E /* Assets.xcassets */,
 				713A133E2B27A24900955E6E /* Preview Content */,
 			);
@@ -138,7 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				713A133B2B27A24900955E6E /* ContentView.swift in Sources */,
+				713A134F2B27A96700955E6E /* MoviesWatchedView.swift in Sources */,
+				713A13512B27AA7F00955E6E /* MoviesToWatchView.swift in Sources */,
 				713A13392B27A24900955E6E /* MoviesApp.swift in Sources */,
+				713A134D2B27A74100955E6E /* ListRow.swift in Sources */,
+				713A13472B27A2AD00955E6E /* CustomButton.swift in Sources */,
+				713A13492B27A41800955E6E /* DataService.swift in Sources */,
+				713A134B2B27A42000955E6E /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

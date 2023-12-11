@@ -8,17 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var dataService = DataService()
+    @State var showToWatch: Bool = true
+    @State var movies: [Movie] = []
+    @State var title: String = ""
+    
     var body: some View {
+      
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if showToWatch {
+                MoviesToWatchView()
+            } else {
+                MoviesWatchedView()
+            }
+            
+            HStack {
+                CustomButton(action: {
+                    title = "List To Watch"
+                    showToWatch = true
+                }, buttonTitle: "List To Watch")
+                
+                CustomButton(action: {
+                    title = "Watched"
+                    showToWatch = false
+                }, buttonTitle: "Watched")
+            }
         }
-        .padding()
+            .onAppear {
+                if showToWatch {
+                    title = "List To Watch"
+                    movies = dataService.getToWatch()
+                } else if !showToWatch {
+                    title = "Watched"
+                    movies = dataService.getWatched()
+                }
+            }
+            
+           
+            
+        }
     }
-}
+
 
 #Preview {
-    ContentView()
+    ContentView(showToWatch: true)
 }
